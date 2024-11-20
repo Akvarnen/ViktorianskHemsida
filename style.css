@@ -1,0 +1,326 @@
+@font-face {
+    font-family: montserrat;
+    src: url(fonts/montserrat.ttf);
+}
+
+@font-face {
+    font-family: birdsOfParadise;
+    src: url(fonts/BirdsofParadise.ttf);
+}
+
+body {
+    margin: auto;
+    height: 100%;
+}
+
+main {
+    margin: auto;
+    max-width: 1000px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+    
+}
+
+section {
+    
+}
+
+aside {
+    text-align: left;
+    min-width: 250px;
+    padding-left: 50px;
+    line-height: 30px;
+    color: black;
+}
+
+header {
+    
+}
+
+img {
+    width: 250px;
+    height: 300px;
+}
+
+article figure {
+    margin: 25px;
+}
+
+article figure figcaption {
+    text-align: center;
+    font-family: montserrat;
+    font-size: 12px;
+    color: black;
+}
+
+nav {
+    overflow: hidden;
+    border: 1.2px solid black;
+    border-right: none;
+    border-left: none;
+    background-color: #ffe8e6;
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    background-color: #ffe8e6;
+    text-align: center;
+    padding: 20px;
+}
+
+p {
+    font-size: 17px;
+    font-family: montserrat;
+    line-height: 25px;
+    color: #4a4a4a;
+}
+
+h2 {
+    color: #ff7c70;
+    font-size: 25px;
+    font-family: montserrat;
+}
+
+h3 {
+    color: #ff9d94;
+    font-size: 20px;
+    font-family: montserrat;
+}
+
+#floralHeader {
+    width: 100%;
+    height: 100%;
+}
+
+.navLink {
+    cursor: pointer;
+    padding: 15px 25px;
+    font-family: montserrat;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    transition: all 500ms;
+}
+
+.navLink:hover {
+    color: #ff82ac;
+    font-size: 25px;
+    text-shadow: 1.3px 1.3px grey;
+}
+
+.active {
+    color: #ff82ac;
+}
+
+.sideNavLink {
+    text-decoration: none;
+    font-family: montserrat;
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.sideNavLink:hover {
+    color: #ff82ac;
+    transition: 0.5s;
+}
+
+.sources {
+    font-size: 15px;
+    font-family: montserrat;
+    line-height: 25px;
+    color: black;
+}
+
+.sources li {
+    list-style: none;
+}
+
+.sources li::before {
+    content: "\2022";
+    color: #ff7c70;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.etiquetteRules {
+    list-style-image: url("images/flowerSymbol.jpg");
+    font-size: 17px;
+    font-family: montserrat;
+    line-height: 25px;
+    color: #4a4a4a;
+}
+
+.linkSources {
+    color: black;
+}
+
+.linkSources:hover {
+    color: #ff82ac;
+}
+
+.linkSources:active, .linkSources:visited {
+    color: #ffccc7;
+}
+
+/* Extra small devices */
+@media only screen and (max-width: 600px) {
+    article figure {
+        width: 100%;
+        float: none;
+        margin: 0;
+        text-align: center;
+    }
+    
+    #queenVictoriaImage {
+        width: 190px;
+        height: 280px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    main {
+        display: block;
+        text-align: left;
+    }
+    
+    aside {
+        display: block;
+    }
+    
+    article figure {
+        float: left;
+    }
+    
+    #floralHeader {
+        content: url("images/flowerHeaderMobile.jpg");
+    }
+    
+    #queenVictoriaImage {
+        width: 190px;
+        height: 280px;
+    }
+    
+} 
+
+@media only screen and (max-width: 992px) {
+    aside {
+        display: none;
+    }
+    
+    #floralHeader {
+        content: url("images/flowerHeaderMobile.jpg");
+    }
+    
+    #mobileButton {
+        position: fixed;
+    }
+
+    #mobileButton img {
+        padding-top: 10px;
+        height: 70px;
+        width: 70px;
+    }
+    
+    #mobileSideNav {
+        display: none;
+        left: -500px;
+        height: 100%;
+        font-family: montserrat;
+        font-size: 30px;
+        background-color: grey;
+        color: black;
+        overflow-x: hidden;
+        position: fixed;
+        padding: 20px;
+        line-height: 50px;
+    }
+    
+    #mobileSideNav h2 {
+        font-size: 40px;
+        color: #ff7c70;
+    }
+        
+    #closeButton {
+        font-size: 40px;
+        float: right;
+        text-decoration: none;
+        color: black;
+        transition: 0.5s;
+    }
+    
+    #closeButton:hover {
+        color: white;
+        transition: 0.5s;
+    }
+    
+    .pageLink {
+        text-decoration: none;
+        color: black; 
+        transition: 0.5s;
+    }
+    
+    .pageLink:hover {
+        color: #ff82ac;
+        transition: 0.5s;
+    }
+    
+    nav {
+        flex-direction: column;
+        display: flex;
+        line-height: 1px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    main {
+        display: block;
+        text-align: justify;
+    }
+    
+    article figure {
+        float: right;
+    }
+    
+    #queenVictoriaImage {
+        width: 190px;
+        height: 280px;
+    }
+    
+    #floralHeader {
+        content: url("images/flowerHeader.jpg");
+    }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    main {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #mobileButton {
+        display: none;
+    }
+    
+    #mobileSideNav {
+        display: none;
+    }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    main {
+        display: flex;
+        flex-direction: row;
+    }
+
+    
+}
